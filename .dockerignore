@@ -1,0 +1,12 @@
+.build
+.git
+.github
+.gitignore
+.gitmodules
+.vscode
+LICENSE
+Makefile
+pkg/**_test.go
+pkg/**/testdata/**
+README.md
+scripts/
