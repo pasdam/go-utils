@@ -5,7 +5,7 @@ replace github.com/pasdam/go-utils/pkg => ./pkg
 go 1.20
 
 require (
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.10.0
 	github.com/xeipuuv/gojsonschema v1.2.0
 	sigs.k8s.io/yaml v1.4.0
 )
