@@ -1,7 +1,6 @@
 package filetestutils
 
 import (
-	"io/ioutil"
 	"os"
 	"path/filepath"
 	"testing"
@@ -9,7 +8,7 @@ import (
 
 // TempFile is a test helper function used to create a temporary file
 func TempFile(t *testing.T, name string) string {
-	dir, err := ioutil.TempDir(os.TempDir(), "*")
+	dir, err := os.MkdirTemp(os.TempDir(), "*")
 	if err != nil {
 		t.Error("Unable to create temp dir", err)
 		return ""
